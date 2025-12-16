@@ -23,7 +23,7 @@ services:
 
   # Eureka Server
   eureka-server:
-    image: 
+    image: rutujapawar2003/eureka-server:latest
     container_name: eureka-server
     ports:
       - "8990:8990"
@@ -33,7 +33,7 @@ services:
 
   # API Gateway
   api-gateway:
-    image: 
+    image: rutujapawar2003/api-gateway:latest
     container_name: api-gateway
     depends_on:
       - eureka-server
@@ -45,7 +45,7 @@ services:
 
   # delivery-service
   delivery-service:
-    image: 
+    image: rutujapawar2003/delivery-service:latest
     container_name: delivery-service
     ports:
       - "8970:8970"
@@ -64,7 +64,7 @@ services:
 
   # loyalty-service
   loyalty-service:
-    image: 
+    image: rutujapawar2003/loyalty-service:latest
     container_name: loyalty-service
     ports:
       - "8940:8940"
@@ -83,7 +83,7 @@ services:
 
   # menu-service
   menu-service:
-    image: 
+    image: rutujapawar2003/menu-service:latest
     container_name: menu-service
     ports:
       - "8920:8920"
@@ -102,7 +102,7 @@ services:
 
   # notification-service
   notification-service:
-    image: 
+    image: rutujapawar2003/notification-service:latest
     container_name: notification-service
     ports:
       - "8980:8980"
@@ -121,7 +121,7 @@ services:
   
   # order-service
   order-service:
-    image: 
+    image: rutujapawar2003/order-service:latest
     container_name: order-service
     ports:
       - "8910:8910"
@@ -140,7 +140,7 @@ services:
 
   # payment-service
   payment-service:
-    image: 
+    image: rutujapawar2003/payment-service:latest
     container_name: payment-service
     ports:
       - "8930:8930"
@@ -159,7 +159,7 @@ services:
   
   # review-service
   review-service:
-    image: 
+    image: rutujapawar2003/review-service:latest
     container_name: review-service
     ports:
       - "8950:8950"
@@ -178,7 +178,7 @@ services:
 
   # subscription-service
   subscription-service:
-    image: 
+    image: rutujapawar2003/subscription-service:latest
     container_name: subscription-service
     ports:
       - "8960:8960"
@@ -197,7 +197,7 @@ services:
 
   # userservice
   userservice:
-    image: 
+    image: rutujapawar2003/userservice:latest
     container_name: userservice
     ports:
       - "8890:8890"
@@ -216,7 +216,7 @@ services:
 
   # Frontend
   frontend:
-    image: 
+    image: rutujapawar2003/frontend:latest
     container_name: tiffino-frontend
     ports:
       - "80:80"
