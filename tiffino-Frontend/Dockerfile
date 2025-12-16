@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-COPY tiffino-Frontend/src /usr/share/nginx/html
+COPY dist/tiffino-frontend/browser /usr/share/nginx/html
 
 RUN chmod -R 777 /usr/share/nginx/html
 
