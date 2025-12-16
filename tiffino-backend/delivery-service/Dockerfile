@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
-COPY target/delivery-service-0.0.1-SNAPSHOT.jar app.jar
+COPY target/delivery-service-0.0.1-SNAPSHOT.jar delivery-service-0.0.1-SNAPSHOT.jar
 EXPOSE 8970
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "delivery-service-0.0.1-SNAPSHOT.jar"]
